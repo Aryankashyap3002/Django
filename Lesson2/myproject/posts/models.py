@@ -8,4 +8,5 @@ class Post(models.Model):
     slug: models.SlugField() # type: ignore
     date: models.DateTimeField(auto_now_add=True) # type: ignore
 
-
+    def __str__(self):
+        return self.title
